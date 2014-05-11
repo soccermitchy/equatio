@@ -9,6 +9,9 @@ E.examples.list = {
     "mandelbrot": ["(function(){var it;var jx=jy=0.0;for(it=0;it<10&&jx*jx+jy*jy<=4;++it){var tmp=2*jx*jy;jx=jx*jx-jy*jy+(-2+3*x/255);jy=tmp+(-1+2*y/255);};return Math.pow(it,5);})()"],
     "unnamed1": ["x<<t>>y", "s<<t>>s", 1, 0.3],
     "tejeez": ["(((50*s)/50)*(((50*s)/50)>>5|(s)>>8))>>((50*s/50)>>16)*(x^y)", "(((50*s)/50)*(((50*s)/50)>>5|(s)>>8))>>((50*s/50)>>16)"]
+    "fractal thing?":["x<<y|y/2<<x|((x<<8|x/2<<16|x/4)&(y<<8|y/2<<16|y/4))/4&(t<<8|t%Math.random()<<16|t%Math.random())"]
+    "i have no idea.":["t>>x|y<<td|y/x<<t<<td<<td/8|x/y<<t<<td<<td/8|x*y<<t<<td<<td/8|y-x<<t<<td<<td/8|y+x<<t<<td<<td/8"]
+    "grany tv image":["td<<t%(y%x)|td<<t*(x*y)+((y/6)%(x+600))"]
 };
 
 E.examples.load = function() {
